@@ -13,18 +13,25 @@ import tr.gov.teias.egitim.adresdefteri.entities.Adres;
 
 /**
  * adres kayıtları için repository servisi
+ *
  * @author ismail
  */
 @Dependent
 @Repository
-public  abstract class AdresRepository  extends AbstractEntityRepository<Adres,Long>{
-    
+public abstract class AdresRepository extends AbstractEntityRepository<Adres, Long> {
+
     /**
      * verilen tc ye ait adres kayıt listesini döndürür
+     *
      * @param tckn 11 dijit tc kimlik no
      * @return :eger kayıt bulamazsa içi boş liste döner
      */
-    
     public abstract List<Adres> findByTckn(String tckn);
-     
+    
+    
+    
+    
+    
+    
+
 }
